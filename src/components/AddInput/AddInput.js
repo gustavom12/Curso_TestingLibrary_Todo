@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import "./AddInput.css"
 import { v4 } from "uuid"
-import TodoList from '../TodoList/TodoList'
 
 function AddInput({
     setTodos, todos
@@ -28,7 +27,7 @@ function AddInput({
                 className="input" 
                 value={todo} 
                 onChange={(e) => setTodo(e.target.value)}
-                placeholder="Add a new task here..."
+                placeholder="Añade una nueva tarea..."
             />
             <button 
                 className="add-btn"
